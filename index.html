@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>designing HTML form</title>
+</head>
+<body>
+  <header>
+    <header>
+			<h3>FORM VALIDATION WITH JS REGULAR EXPRESSION</h3>
+		</header>
+    <i class="far fa-file-code">  CodeRevolution</i>
+  </header>
+  <form action="">
+    <p>You are a.....</p>
+    <input type="radio" id = "male" name = "gender">
+    <label for="male">Male</label><br>
+    <input type="radio" id = "female" name = "gender">
+    <label for="female">Female</label><br>
+    <input type="radio" id = "other" name = "gender">
+    <label for="other">Other</label>
+    <p>You are interested in:</p>
+    <input type="checkbox" id = "itsector" name = "interest">
+    <label for="itsector">Web Development</label><br>
+    <input type="checkbox" id = "itsector" name = "interest">
+    <label for="itsector">Photoshop</label><br>
+    <input type="checkbox" id = "itsector" name = "interest">
+    <label for="itsector">Graphics Design</label><br>
+    <input type="checkbox" id = "itsector" name = "interest">
+    <label for="itsector">Machine Learning</label>
+    <fieldset>
+      <legend>your data:</legend>
+      
+      <input type="text" name="username" placeholder="username">
+      <p>Username must be and contain 5 - 18 characters</p>
+
+      <input type="text" name="email" placeholder="email">
+      <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+      <input type="password" name="password" placeholder="password">
+      <p>Password must contain at least one uppercase,<br>one number and one casecharacters symbol</p>
+
+      <input type="text" name="telephone" placeholder="mobile number">
+      <p>Telephone must be a valid italian mobile number (10 digits)</p>
+    </fieldset>
+    <p>How would you like to contact with us:</p>
+    <select name="contact" id="contact">
+      <option value="">By email</option>
+      <option value="">By Telephone</option>
+    </select>
+    <input type="submit" value="Join our CodeRevolution">
+  </form>
+     
+  <script src="main.js"></script>
+  <footer>
+    <p>Copyright &copy; 2021 by <strong>Faruk Alam Hawlader</strong></p>
+</footer>
+</body>
+</html>

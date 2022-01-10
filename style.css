@@ -1,0 +1,140 @@
+body{
+    margin: 0 100px;
+    background-color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color:#bcd6e5 ;
+    text-align: center;
+}
+header h3{
+    margin: 0 auto;
+    color: chartreuse;
+    text-align: center;
+    background-color: rgb(37, 36, 36);
+    padding: 10px 0;
+}
+
+header i{
+    font-size:45px;
+    color: red;
+    padding: 35px ;
+}
+form{
+    color: azure;
+    margin: 15px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+form p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+fieldset{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 15px;
+    padding: 25px;
+}
+fieldset legend{
+    font-size:20px;
+    letter-spacing: 0.5px;
+}
+fieldset input{
+    display: block;
+    padding: 4px px;
+    font-size: 1.4rem;
+    margin: 10px auto;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+    text-align: center;
+}
+fieldset > p{
+    margin: 0 auto;
+    font-size: small;
+    text-align: center;
+}
+select{
+    display: block;
+    margin-bottom: 45px;
+    padding: 5px 25px 5px 10px;
+    background-color: #3f3d3d;
+    border: 2px solid #bcd6e5;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    margin: 0 auto;
+    display: block;
+    padding: 8px 15px;
+    background-color: red;
+    color: #bcd6e5;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    font-size: large;
+}
+input[type="submit"]:hover{
+    background-color:  #36cc36;
+    color: #3f3d3d;
+
+}
+
+/* validation */
+input.valid{
+    border-color: #36cc36;
+}
+input.invalid{
+    border-color: orange;
+}
+input + p{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+input[type="radio"]{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    
+}
+label[for="male"],label[for="female"],
+label[for="other"]{
+    padding-left: 15px;
+    cursor: pointer;
+}
+input:checked+label[for="male"],
+input:checked+label[for="female"],
+input:checked+label[for="other"]{
+    color: #36cc36;
+}
+input[type="checkbox"]{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+label[for="itsector"]{
+    padding-left: 15px;
+    cursor: pointer;
+}
+input:checked+label[for="itsector"]{
+    color: #36cc36;
+}
+footer p{
+    background: #013856;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%
+}  
